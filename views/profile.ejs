@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.name %> | Amazon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    *{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7CEB6;
+}
+#navigationbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #495FA6 ;
+    padding: 25px 40px;
+    z-index: 99;
+    border-bottom: 2px solid #313f6d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.logo{
+    width: 170px;
+}
+.logo img{
+    width: 100%;
+}
+#searchbar{
+    border-radius: 5px;
+    width: 40%;
+    height: 35px;
+    background: #fff;
+}
+#searchbar input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+}
+#profile,#cart{
+    font-size: 22px;
+    font-weight: 600;
+}
+#profile a,#cart a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    color: #fff;
+}
+#profile a:hover, #cart a:hover{
+    color: #000;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #F6AE84;
+    border-radius: 50%;
+    font-size: 17px;
+}
+#display{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    padding: 30px;
+    /* background-color: red; */
+}
+#display h2{
+    font-weight: 700;
+    font-family: "Built Titling";
+    letter-spacing: 2px;
+    font-size: 4vw;
+    cursor: default;
+}
+#accountbtns{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 50%;
+    padding: 40px;
+}
+.card-tbn{
+    max-width: 250px;
+    height: 120px;
+    text-align: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    border-radius: 5px;
+    background-color: #6a82d3;
+    color: #fff;
+}
+.card-tbn:hover{
+    background: #8a9cd7;
+    color: #000;
+    border: 3px solid #1c3480;
+}
+#accountbtns a{
+    text-decoration: none;
+    color: #000;
+}
+#footer{
+    width: 100%;
+    height: 60vh;
+    background-color: #1c3480;
+    margin-top: 3%;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-color: #495FA6;
+    color: #fff;
+    font-weight: 600;
+}
+#top a{
+    color: #fff;
+    text-decoration: none;
+}
+#mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto;
+    width: 400px;
+    height: 200px;
+}
+#mid img{
+    width: 100%;
+}
+#socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 27px;
+    width: 100%;
+    height: 10%;
+}
+#socials a{
+    color: #F6AE84;
+    text-decoration: none;
+}
+#bottom{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.btm-top,.btm-btm{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+}
+.btm-top a,.btm-btm{
+    color: #F6AE84;
+    text-decoration: none
+}
+</style>
+<body>
+    <div id="main">
+        <%- include('./partials/header')%>
+        <div id="display">
+            <h2>Your Account</h2>
+            <div id="accountbtns">
+                <a href="/orderhistory"><div class="card-tbn p-2">
+                    <h5 class="fw-bold">Order History</h5>
+                    <p class="fw-semibold">Track, return or buy things again</p>
+                </div></a>
+                <a href="/wishlist"><div class="card-tbn p-2">
+                    <h5 class="fw-bold">Your Wishlist</h5>
+                    <p class="fw-semibold">Track, return or buy things again</p>
+                </div></a>
+                <a href="/cart"><div class="card-tbn p-2">
+                    <h5 class="fw-bold">Your Cart</h5>
+                    <p class="fw-semibold">Check your Shopping Cart</p>
+                </div></a>
+                <a href="/addproduct"><div class="card-tbn p-2">
+                    <h5 class="fw-bold">Add Product</h5>
+                    <p class="fw-semibold">Start selling your product on Amazon!</p>
+                </div></a>
+            </div>
+            <% if(text){ %>
+                <div class="alert alert-success" id="notification" role="alert">
+                    <%= text%>
+                </div>
+            <% } %>
+        </div>
+        <%- include('./partials/footer')%>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

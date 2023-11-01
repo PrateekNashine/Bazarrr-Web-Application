@@ -1,0 +1,28 @@
+<div id="navigationbar">
+    <div class="logo">
+        <a href="/"><img src="../images/baazarrr-logos_transparent.png" alt=""></a>
+    </div>
+    <div id="searchbar">
+        <form action="">
+            <input type="text" placeholder="Search">
+        </form>
+    </div>
+    <div id="profile">
+        <a href="/profile">
+            <i class="ri-user-3-line"></i>
+            <%=user.name%>
+        </a>
+    </div>
+    <div id="cart">
+        <a href="/cart">
+            <i class="ri-shopping-cart-2-line"></i>
+            Cart
+            <div class="counter">
+                0
+            </div>
+        </a>
+    </div>
+    <div class="btn btn-danger fw-semibold">
+       <a style="text-decoration: none; color: #fff" href="/logout">Logout</a>
+    </div>
+</div>

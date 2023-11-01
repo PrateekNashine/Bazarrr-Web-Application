@@ -1,0 +1,196 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif; */
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6a82d3;
+}
+
+.register{
+  text-decoration: none;
+  color: #000;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* margin: 5vh auto;  */
+}
+
+.loginLogo{
+    object-fit: contain;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5%;
+    padding: 2% 1%;
+    background-color: #F6AE84;
+}
+
+.formContainer h2{
+  text-align: center;
+}
+
+div.password{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    font-size: larger;
+}
+
+.formContainer>h2{
+    margin-bottom: 10%;
+    font-size: 300%;
+}
+
+.formContainer>form>h5{
+    margin-bottom: 3%;
+    font-size: larger;
+}
+
+.formContainer>form>input{
+    margin-bottom: 5%; 
+    width: 98%;
+    min-height: 4vh;
+    padding: 0 1%;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.formContainer>form>input:focus{
+    border-color: lightblue;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.signIn{
+    font-weight: 800;
+    background-color: #6a82d3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5% auto;
+    width: 100%;
+    padding: 1% 0;
+    font-size: large;
+    color: #fff;
+}
+
+.signIn:hover{
+    background-color: #8a9cd7;
+    color: #000;
+}
+
+.formContainer>.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2%;
+    width: 100%;
+    padding: 1% 0;
+    font-size: 20px;
+}
+
+.register:hover{
+    background-color: rgb(193, 110, 110);
+}
+
+.logo2{
+    width: 20%;
+    height: 10%;
+    margin: auto;
+}
+#footer{
+    width: 100%;
+    height: 60vh;
+    background-color: #1c3480;
+    margin-top: 3%;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-color: #495FA6;
+    color: #fff;
+    font-weight: 600;
+}
+#top a{
+    color: #fff;
+    text-decoration: none;
+}
+#mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto;
+    width: 400px;
+    height: 200px;
+}
+#mid img{
+    width: 100%;
+}
+#socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 27px;
+    width: 100%;
+    height: 10%;
+}
+#socials a{
+    color: #F6AE84;
+    text-decoration: none;
+}
+#bottom{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.btm-top,.btm-btm{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+}
+.btm-top a,.btm-btm{
+    color: #F6AE84;
+    text-decoration: none
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Bazarrr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/cart.css">
+</head>
+<body>
+    <div id="main">
+        <%- include('./partials/header')%>
+
+        <div id="wrapper">
+            <div id="container" class="border border-dark mt-4">
+                <h2>Shopping Cart</h2>
+                <br>
+                <div id="products" class="container">
+                    <div id="productcard" class="mt-2">
+                        <div id="productimg">
+                            <img src="https://images.unsplash.com/photo-1664542497982-d864be07cc63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div id="productcontent">
+                            <h3 class="mt-2">Product name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit alias sint corporis quae nobis nostrum?</p>
+                            <small>Seller</small>
+                        </div>
+                        <div id="price-cart">
+                            <h4>Price</h4>
+                            <div class="btn btn-info">Remove from cart</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="products" class="container">
+                    <div id="productcard" class="mt-2">
+                        <div id="productimg">
+                            <img src="https://images.unsplash.com/photo-1664542497982-d864be07cc63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div id="productcontent">
+                            <h3 class="mt-2">Product name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit alias sint corporis quae nobis nostrum?</p>
+                            <small>Seller</small>
+                        </div>
+                        <div id="price-cart">
+                            <h4>Price</h4>
+                            <div class="btn btn-info">Remove from cart</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="products" class="container">
+                    <div id="productcard" class="mt-2">
+                        <div id="productimg">
+                            <img src="https://images.unsplash.com/photo-1664542497982-d864be07cc63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div id="productcontent">
+                            <h3 class="mt-2">Product name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit alias sint corporis quae nobis nostrum?</p>
+                            <small>Seller</small>
+                        </div>
+                        <div id="price-cart">
+                            <h4>Price</h4>
+                            <div class="btn btn-info">Remove from cart</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="totalammount">
+                <h4>Subtotal (1 item): ₹00</h4>
+                <div id="buybtn" class="btn btn-warning">Proceed to Buy</div>
+            </div>
+
+        </div>
+        <%- include('./partials/footer')%>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
